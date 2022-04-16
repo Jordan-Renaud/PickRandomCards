@@ -19,9 +19,9 @@ namespace PickRandomCards
         {
             int value = random.Next(1, 14);
             if (value == 1) return "Ace";
-            if (value == 1) return "Jack";
-            if (value == 1) return "Queen";
-            if (value == 1) return "King";
+            if (value == 11) return "Jack";
+            if (value == 12) return "Queen";
+            if (value == 13) return "King";
             return value.ToString();
         }
 
@@ -32,9 +32,9 @@ namespace PickRandomCards
             //if it's 1 return the string Spades
             if (value == 1) return "Spades";
             //if it's 1 return the string Hearts
-            if (value == 1) return "Hearts";
+            if (value == 2) return "Hearts";
             //if it's 1 return the string Clubs
-            if (value == 1) return "Clubs";
+            if (value == 3) return "Clubs";
             //if we haven't returned yet, return the string Diamonds
             return "Diamonds";
         }
